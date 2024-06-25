@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #9fe1f5;
+  position: relative;
+}
+
+/*--------------------- блок с заполнением списка ------------------*/
+.container_lists {
+  position: absolute;
+  top: 55px;
+  right: 50vh;
+  background-color: #e3e8e6;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 50%;
+  height: 650px;
+}
+
+.list_inner {
+  margin: 50px auto;
+  width: 500px;
+}
+
+/* форма заполнения */
+.form {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.type_member {
+  width: 250px;
+  height: 25px;
+}
+
+.add_member {
+  height: 28px;
+  width: 70px;
+  background-color: #3165f5;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.add_member:hover {
+  background-color: #6ce9f5;
+  color: #000;
+}
+
+.add_member:active {
+  height: 26px;
+  width: 68px;
+}
+
+/* список участников */
+
+.list {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.list_cell {
+  position: relative;
+  padding: 3px 0 3px 5px;
+  display: flex;
+  border-top: 1px solid #000;
+}
+
+.list_cell:last-child {
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.delete_member {
+  position: absolute;
+  right: 5px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: none;
+  background-color: #bab6b6;
+}
+
+.delete_member:hover {
+  background-color: #e34444;
+  color: #fff;
+}
+
+/* кнопки */
+
+.buttons_list {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.lists_btn {
+  height: 30px;
+  width: 90px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3165f5;
+  border: none;
+}
+
+.lists_btn:hover {
+  background-color: #6ce9f5;
+  color: #000;
+}
+
+/*---------------------------- турнирная сетка ------------------------*/
+
+.grid {
+  display: flex;
+}
+
+.member {
+  width: 150px;
+  height: 50px;
+  background-color: #fcff33;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.select_member {
+  margin-top: 15px;
+  max-width: 100px;
+}
+
+.selected_name {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 15px;
+  color: #000;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+}
+
+.col_4 {
+  padding-top: 30px;
+}
+
+.col_2 {
+  padding-top: 90px;
+}
+
+.col_1 {
+  padding-top: 210px;
+}
+
+.member_1{
+  margin-top: 220px;
+}
+
+.member_4 {
+  margin-bottom: 70px;
+}
+
+.member_3 {
+  margin-bottom: 190px;
+}
+
+.buttons_grid {
+  text-align: center;
+}
+
+.grid_btn {
+  height: 50px;
+  width: 130px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3165f5;
+  border: 1px solid #000;
+}
+
+.grid_btn:hover {
+  background-color: #80ff88;
+  color: #000;
+}
+
+.acept:active {
+  height: 48px;
+  width: 128px;
+}
+
+/*---------------------- вспомогательные классы -----------------*/
+
+.disable {
+  background-color: red;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
+.win {
+  background-color: #11f721;
+}
